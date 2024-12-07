@@ -1,0 +1,1 @@
+std::vector<int> vec; for (int i = 0; i < 10; ++i) { vec.push_back(i); } for (int i = 0; i < vec.size(); ++i) { int value = vec[i]; // potential bug: accessing vec[i] after the vector is modified } vec.erase(vec.begin()); // Modifies the vector
